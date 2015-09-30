@@ -7,8 +7,8 @@ Gem::Specification.new do |spec|
   spec.name          = "tinkerbot"
   spec.version       = Tinkerbot::VERSION
   spec.authors       = ["Liz Abinante"]
-  spec.email         = ["eabinante@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
+  spec.email         = ["me@liz.codes"]
+  spec.summary       = %q{A simple CLI interface that helps you deploy static projects to AWS s3.}
   spec.description   = %q{TODO: Write a longer description. Optional.}
   spec.homepage      = ""
   spec.license       = "MIT"
