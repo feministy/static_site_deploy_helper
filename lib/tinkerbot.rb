@@ -24,9 +24,7 @@ module Tinkerbot
     o.on "config", "configure tinkerbot to a new project" do
       Config.init
     end
-  end
 
-  Slop.parse do |o|
     o.on "help", "-help", "-h", "help me oh god HOW DOES THIS WORK" do
       puts "#{'-' * 70}"
       puts "* ~ * ~ * TINKERBOT!! * ~ * ~ *"
@@ -44,7 +42,7 @@ module Tinkerbot
       puts ">> OPTIONS:"
       puts "all passed options are conveniently printed below."
       puts "#{'-' * 70}"
-      puts opts
+      puts o
     end
   end
 end
