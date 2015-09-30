@@ -1,4 +1,4 @@
-require './base'
+require 'notify/base'
 
 module Tinkerbot
   module Notify; end

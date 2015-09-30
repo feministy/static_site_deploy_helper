@@ -5,7 +5,7 @@ require "slop"
 require "tinkerbot/version"
 
 # long-winded terminal print outs
-require "tinkerbot/notify/tinkerbot"
+require "tinkerbot/notify"
 
 # hey look, actual code
 require "tinkerbot/config"
