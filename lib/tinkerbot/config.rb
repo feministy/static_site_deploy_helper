@@ -1,8 +1,5 @@
 module Tinkerbot
   class Config
-    extend self
-
-    # kicks off allthethings
     def initialize
       detect_project
       @store = YAML::Store.new("tinkerbot_config.yml")
@@ -11,6 +8,12 @@ module Tinkerbot
 
     def detect_project
       # check if a current project exists
+    end
+
+    def save
+      # @store.transaction do |store|
+      #   store['hello'] = "hello"
+      # end
     end
   end
 end
