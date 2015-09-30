@@ -20,7 +20,7 @@ gem install tinkerbot
 
 # usage
 
-tinkerbot is a CLI that saves your commonly use settings and deploy pipelines in a file (`tinkerbot_config.yml`) so you don't have to remember boring things and get to do fun stuff instead. 
+tinkerbot saves your commonly used settings and deploy pipelines in a file (`tinkerbot_config.yml`) so you don't have to remember boring things and get to do fun stuff instead. 
 
 ## setup
 
