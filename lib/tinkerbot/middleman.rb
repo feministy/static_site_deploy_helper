@@ -1,8 +1,6 @@
 module Tinkerbot
-  module Middleman
-    extend self
-
-    def deploy
+  class Middleman
+    def initialize(opts={})
     end
   end
 end
