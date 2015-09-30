@@ -1,5 +1,6 @@
 # ruby libraries
 require "slop"
+require "yaml/store"
 
 # very special things
 require "tinkerbot/version"
@@ -25,7 +26,7 @@ module Tinkerbot
     end
 
     o.on "config", "configure tinkerbot to a new project" do
-      Config.init
+      Config.new
     end
 
     o.on "help", "-help", "-h", "help me oh god HOW DOES THIS WORK" do

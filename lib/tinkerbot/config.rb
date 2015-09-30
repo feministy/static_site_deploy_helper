@@ -1,14 +1,12 @@
 module Tinkerbot
-  module Config
+  class Config
     extend self
 
     # kicks off allthethings
-    def init
+    def initialize
       detect_project
-      project = Notify::Config.get_project_type
-      if project.class == "Tinkerbot::Middleman"
-        # do a thing
-      end
+      @store = YAML::Store.new("tinkerbot_config.yml")
+      @project = Notify::Config.get_project_type
     end
 
     def detect_project
