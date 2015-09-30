@@ -4,6 +4,9 @@ require "slop"
 # very special things
 require "tinkerbot/version"
 
+# long-winded terminal print outs
+require "tinkerbot/notify/tinkerbot"
+
 # hey look, actual code
 require "tinkerbot/config"
 require "tinkerbot/git"
@@ -26,22 +29,7 @@ module Tinkerbot
     end
 
     o.on "help", "-help", "-h", "help me oh god HOW DOES THIS WORK" do
-      puts "#{'-' * 70}"
-      puts "* ~ * ~ * TINKERBOT!! * ~ * ~ *"
-      puts "oh hey, so you want to see how tinkerbot works?"
-      puts ""
-      puts ">> GETTING STARTED:"
-      puts "run the following command in terminal:"
-      puts "$ tinkerbot config"
-      puts "and follow the on-screen prompts."
-      puts ""
-      puts ">> MORE HELP:"
-      puts "more comprehensive documentation can be found on github:"
-      puts "https://github.com/feministy/tinkerbot"
-      puts ""
-      puts ">> OPTIONS:"
-      puts "all passed options are conveniently printed below."
-      puts "#{'-' * 70}"
+      Notify::Base.help
       puts o
     end
   end
