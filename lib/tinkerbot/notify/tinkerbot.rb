@@ -1,6 +1,6 @@
 module Tinkerbot
   module Notify
-    module Base
+    module Tinkerbot
       extend self
 
       def help

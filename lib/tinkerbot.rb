@@ -29,7 +29,7 @@ module Tinkerbot
     end
 
     o.on "help", "-help", "-h", "help me oh god HOW DOES THIS WORK" do
-      Notify::Base.help
+      Notify::Tinkerbot.help
       puts o
     end
   end
