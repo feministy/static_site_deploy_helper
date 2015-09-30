@@ -1,8 +1,8 @@
 # tinkerbot
 
-not unlike tinkerbell, tinkerbot is here when you need it to help with your simple tasks. specifically, deplying static projects to aws s3 buckets.
+tinkerbot is a simple CLI interface that helps you deploy static projects to aws s3 with ease.
 
-tinkerbot is a simple CLI interface that helps you create configurations locally to deploy your projects.
+not unlike tinkerbell, tinkerbot is here when you need it to help with your simple tasks. specifically, deploying static projects to aws s3 buckets and guiding you through using git-crypt to store your keys.
 
 **requirements**
 
@@ -20,7 +20,17 @@ gem install tinkerbot
 
 # usage
 
-tinkerbot is a CLI that uses local configurations to get you all setup. 
+tinkerbot is a CLI that saves your commonly use settings and deploy pipelines in a file (`tinkerbot_config.yml`) so you don't have to remember boring things and get to do fun stuff instead. 
+
+## setup
+
+run:
+
+```bash
+tinkerbot config
+```
+
+and follow the prompts on screen.
 
 ## supported project types
 
